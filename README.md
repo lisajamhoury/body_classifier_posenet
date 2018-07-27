@@ -1,4 +1,4 @@
-# Gesture Classifier Using Posenet, TensorFlow.js and Ml5.js 
+# Gesture Classifier Using Posenet, TensorFlow.js and ml5.js 
 
 :rainbow: Based on Daniel Shiffman's [Color Classifier Example](https://github.com/CodingTrain/website/tree/master/Courses/intelligence_learning/session7). :rainbow: 
 :pray: Thanks to Yining for [Posenet + KNN Example](https://github.com/yining1023/posenet-knn).:pray:
@@ -36,7 +36,7 @@ let testLive = false;
 
 It works! It's not so bad considering my data is not so good (see below). I'm looking forward to testing with better data.
 
-[Add image here]
+<img src="https://raw.githubusercontent.com/lisajamhoury/body_classifier_posenet/master/images/results.png" alt="testResults"/>
 
 
 ### Issues 
