@@ -34,7 +34,7 @@ let testLive = false;
 
 ### Results
 
-It works! It's not so bad considering my data is not so good (see below). I'm looking forward to testing with better data.
+It works! It's not so bad considering my data is not so good. Posenet had a lot of trouble catching my arms overhead in pose 3, and you can see that in the training and testing results. I'll test with better data once I have it.
 
 <img src="https://raw.githubusercontent.com/lisajamhoury/body_classifier_posenet/master/images/results.png" alt="testResults"/>
 
@@ -42,12 +42,12 @@ It works! It's not so bad considering my data is not so good (see below). I'm lo
 ### Issues 
 
 1. I recorded data in my tiny apartment with bad light and it's not very good. Will record better data at ITP with more space. Maybe today!
-2. I'm getting an `identifier has already been used` error at the top of my sketch.js file. It's not affecting anything, but would like to figure out where it's coming from. [Filed issue here](https://github.com/lisajamhoury/body_classifier_posenet/issues/1).
+2. I'm getting an `identifier has already been used` error at the top of my sketch.js file. It's not affecting anything, but I would like to figure out where it's coming from. [Filed issue here](https://github.com/lisajamhoury/body_classifier_posenet/issues/1).
 
 ### What I Want To Do Next 
 
-1. Add the recording functionality to repo
-2. Train from live data. I believe I just need to call model.fit each time a user adds data to live train it. Is this correct?
+1. Train from live data. I believe I just need to call model.fit each time a user adds data to live train it. Is this correct?
+2. Add the recording functionality to repo
 3. Record new data. 
 
 
