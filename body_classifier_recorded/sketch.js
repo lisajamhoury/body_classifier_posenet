@@ -14,11 +14,10 @@
 // https://codingtrain.github.io/ColorClassifer-TensorFlow.js
 // https://github.com/CodingTrain/ColorClassifer-TensorFlow.js
 
-// decide if you want to test live or test the recorded data
+// set true to test live data
+// set false to test from recorded training data
 let testLive = true;
-let testRecorded = false; 
 
-// 
 let data;
 let model;
 let xs, ys;
@@ -160,7 +159,7 @@ async function train() {
 function draw() {
 
   // tests the model based on the data used to train the model
-  if (trained && testRecorded) {
+  if (trained && !testLive) {
 
     let testInput = points[counter];
 
@@ -245,7 +244,7 @@ function guessPoints(pointsToGuess) {
     if (testLive) labelP.html(`Pose guess: ${index}`);
     
     // if testing from recorded data, compare the actual pose to the guess
-    if (testRecorded) { 
+    if (!testLive) { 
       let currentLabel = '';
       if (counter > 0) currentLabel = labelP.elt.innerHTML;
       
